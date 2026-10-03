@@ -1,0 +1,318 @@
+<?xml5bs dataVersion="1.0"?>
+<catalogue id="lion-rampant-custom" name="Lion Rampant: Custom Houserules" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  
+  <!-- CONSTRAINTS & RESTRICTIONS -->
+  <entryLinks/>
+  <sharedSelectionEntries>
+    
+    <!-- RETINUE UPGRADES -->
+    <selectionEntry id="upgrade-inspiring" name="Inspiring Personality" book="Houserules" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Points" typeId="points" value="1"/>
+      </costs>
+      <comment>The unit is joined (swap one model) by an inspiring personality. The unit improves its Courage by +1 whilst the personality is alive. Susceptible to Lucky Blows.</comment>
+    </selectionEntry>
+
+    <selectionEntry id="upgrade-captain" name="Captain" book="Houserules" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Points" typeId="points" value="1"/>
+      </costs>
+      <comment>1 Unit in the army may be joined by a captain (swap one model). The unit doesn’t cause a turn-over on a failed order test whilst the captain is alive. Susceptible to Lucky Blows.</comment>
+    </selectionEntry>
+
+    <selectionEntry id="upgrade-renown" name="Renown Reputation" book="Houserules" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Points" typeId="points" value="1"/>
+      </costs>
+      <comment>1 Unit in the army may be of renown reputation. Whilst this unit is not Battered, enemy units within 6 inches of this unit suffer a -1 penalty to their Courage.</comment>
+    </selectionEntry>
+
+    <!-- UNITS -->
+    <!-- 1. Elite Cavalry -->
+    <selectionEntry id="unit-elite-cavalry" name="Elite Cavalry" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-elite-cav" name="Elite Cavalry" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">6</characteristic>
+            <characteristic name="Move Order" typeId="move-order">7+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">10&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">-</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">-</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">5+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">3+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">5+</characteristic>
+            <characteristic name="Armor" typeId="armor">4</characteristic>
+            <characteristic name="Courage" typeId="courage">3+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Counter-Charge; Wild Charge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="6"/></costs>
+    </selectionEntry>
+
+    <!-- 2. Heavy Cavalry -->
+    <selectionEntry id="unit-heavy-cavalry" name="Heavy Cavalry" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-heavy-cav" name="Heavy Cavalry" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">4</characteristic>
+            <characteristic name="Move Order" typeId="move-order">5+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">10&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">-</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">-</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">5+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">4+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">5+</characteristic>
+            <characteristic name="Armor" typeId="armor">3</characteristic>
+            <characteristic name="Courage" typeId="courage">4+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Counter-Charge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="4"/></costs>
+    </selectionEntry>
+
+    <!-- 3. Missile Cavalry -->
+    <selectionEntry id="unit-missile-cavalry" name="Missile Cavalry" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-missile-cav" name="Missile Cavalry" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">4</characteristic>
+            <characteristic name="Move Order" typeId="move-order">5+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">12&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">6+</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">5+/12&quot;</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">7+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">5+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">6+</characteristic>
+            <characteristic name="Armor" typeId="armor">3</characteristic>
+            <characteristic name="Courage" typeId="courage">5+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Evade; Skirmish (Ranged)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="4"/></costs>
+    </selectionEntry>
+
+    <!-- 4. Elite Infantry -->
+    <selectionEntry id="unit-elite-inf" name="Elite Infantry" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-elite-inf" name="Elite Infantry" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">6</characteristic>
+            <characteristic name="Move Order" typeId="move-order">5+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">6&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">-</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">-</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">5+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">3+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">4+</characteristic>
+            <characteristic name="Armor" typeId="armor">4</characteristic>
+            <characteristic name="Courage" typeId="courage">3+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Flexible</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="6"/></costs>
+    </selectionEntry>
+
+    <!-- 5. Heavy Infantry -->
+    <selectionEntry id="unit-heavy-inf" name="Heavy Infantry" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-heavy-inf" name="Heavy Infantry" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">4</characteristic>
+            <characteristic name="Move Order" typeId="move-order">5+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">6&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">-</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">-</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">6+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">5+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">4+</characteristic>
+            <characteristic name="Armor" typeId="armor">3</characteristic>
+            <characteristic name="Courage" typeId="courage">4+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Defensive Formation</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="4"/></costs>
+    </selectionEntry>
+
+    <!-- 6. Light Infantry -->
+    <selectionEntry id="unit-light-inf" name="Light Infantry" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-light-inf" name="Light Infantry" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">2</characteristic>
+            <characteristic name="Move Order" typeId="move-order">5+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">8&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">-</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">-</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">6+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">5+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">5+</characteristic>
+            <characteristic name="Armor" typeId="armor">2</characteristic>
+            <characteristic name="Courage" typeId="courage">4+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Defensive Formation</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="2"/></costs>
+    </selectionEntry>
+
+    <!-- 7. Brutish Infantry -->
+    <selectionEntry id="unit-brutish-inf" name="Brutish Infantry" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-brutish-inf" name="Brutish Infantry" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">4</characteristic>
+            <characteristic name="Move Order" typeId="move-order">6+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">8&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">-</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">-</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">5+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">3+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">6+</characteristic>
+            <characteristic name="Armor" typeId="armor">2</characteristic>
+            <characteristic name="Courage" typeId="courage">4+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Counter-Charge vs Inf.; Fast; Flexible; Wild Charge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="4"/></costs>
+    </selectionEntry>
+
+    <!-- 8. Zealous Infantry -->
+    <selectionEntry id="unit-zealous-inf" name="Zealous Infantry" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-zealous-inf" name="Zealous Infantry" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">3</characteristic>
+            <characteristic name="Move Order" typeId="move-order">6+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">6&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">-</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">-</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">6+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">5+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">5+</characteristic>
+            <characteristic name="Armor" typeId="armor">2</characteristic>
+            <characteristic name="Courage" typeId="courage">3+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Word of God</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="3"/></costs>
+    </selectionEntry>
+
+    <!-- 9. Peasant Mob -->
+    <selectionEntry id="unit-peasant-mob" name="Peasant Mob" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-peasant-mob" name="Peasant Mob" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">1</characteristic>
+            <characteristic name="Move Order" typeId="move-order">6+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">8&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">-</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">-</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">7+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">6+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">6+</characteristic>
+            <characteristic name="Armor" typeId="armor">1</characteristic>
+            <characteristic name="Courage" typeId="courage">5+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Disposable</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="1"/></costs>
+    </selectionEntry>
+
+    <!-- 10. Pack of Hounds -->
+    <selectionEntry id="unit-hounds" name="Pack of Hounds" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-hounds" name="Pack of Hounds" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">2</characteristic>
+            <characteristic name="Move Order" typeId="move-order">5+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">8&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">-</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">-</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">5+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">4+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">6+</characteristic>
+            <characteristic name="Armor" typeId="armor">2</characteristic>
+            <characteristic name="Courage" typeId="courage">5+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Disposable; Fast; Flexible; Wild Charge</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="2"/></costs>
+    </selectionEntry>
+
+    <!-- 11. Archers (Ranged) -->
+    <selectionEntry id="unit-archers" name="Archers" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-archers" name="Archers" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">4</characteristic>
+            <characteristic name="Move Order" typeId="move-order">5+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">6&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">6+</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">5+/18&quot;</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">7+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">6+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">5+</characteristic>
+            <characteristic name="Armor" typeId="armor">2</characteristic>
+            <characteristic name="Courage" typeId="courage">4+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Ranged</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="4"/></costs>
+    </selectionEntry>
+
+    <!-- 12. Crossbowmen (Ranged) -->
+    <selectionEntry id="unit-crossbowmen" name="Crossbowmen" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-crossbowmen" name="Crossbowmen" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">4</characteristic>
+            <characteristic name="Move Order" typeId="move-order">5+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">6&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">7+</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">4+/18&quot;</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">7+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">6+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">5+</characteristic>
+            <characteristic name="Armor" typeId="armor">2</characteristic>
+            <characteristic name="Courage" typeId="courage">4+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Ranged</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="4"/></costs>
+    </selectionEntry>
+
+    <!-- 13. Skirmishers (Ranged) -->
+    <selectionEntry id="unit-skirmishers" name="Skirmishers" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="prof-skirmishers" name="Skirmishers" hidden="false" typeId="unit-stats">
+          <characteristics>
+            <characteristic name="Cost" typeId="cost">2</characteristic>
+            <characteristic name="Move Order" typeId="move-order">5+</characteristic>
+            <characteristic name="Max Move" typeId="max-move">8&quot;</characteristic>
+            <characteristic name="Shoot Order" typeId="shoot-order">7+</characteristic>
+            <characteristic name="Shoot Value" typeId="shoot-val">5+/12&quot;</characteristic>
+            <characteristic name="Attack Order" typeId="attack-order">7+</characteristic>
+            <characteristic name="Attack Value" typeId="attack-val">6+</characteristic>
+            <characteristic name="Def Value" typeId="def-val">6+</characteristic>
+            <characteristic name="Armor" typeId="armor">1</characteristic>
+            <characteristic name="Courage" typeId="courage">5+</characteristic>
+            <characteristic name="Special Rules" typeId="rules">Evade; Fast; Hard to Target; Skirmish (Ranged)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs><cost name="Points" typeId="points" value="4"/></costs>
+    </selectionEntry>
+
+  </sharedSelectionEntries>
+</catalogue>
